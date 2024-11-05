@@ -40,7 +40,7 @@ def main():
             for bullet in shots:
                 if bullet.check_collision(rock):
                     bullet.kill()
-                    rock.kill()
+                    rock.split()
             
         screen.fill("black")
 
